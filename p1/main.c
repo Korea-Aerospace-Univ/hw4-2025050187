@@ -3,7 +3,8 @@
 int main() {
     int answer, guess, count = 0;
 
-    scanf("%d", &answer);   /* 정답 입력 */
+    printf("정답 입력 : ");   /* ← 이 줄 추가 */
+    scanf("%d", &answer);
 
     do {
         scanf("%d", &guess);
