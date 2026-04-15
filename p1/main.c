@@ -14,18 +14,18 @@ int main(void)
         count++;
 
         if (guess > answer) {
-            printf("%d>? 보다 낮습니다\n", guess);
+            printf("%d>?\n", guess);
         }
         else if (guess < answer) {
-            printf("%d<? 보다 높습니다\n", guess);
+            printf("%d<?\n", guess);
         }
         else {
-            printf("%d==? 정답입니다\n", guess);
+            printf("%d==?\n", guess);
         }
 
     } while (guess != answer);
 
-    printf("%d 시도횟수는 %d회\n", answer, count);
+    printf("%d", count);
 
     return 0;
 }
